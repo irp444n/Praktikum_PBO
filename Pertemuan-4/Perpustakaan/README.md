@@ -4,7 +4,7 @@ Aplikasi konsol berbasis Java untuk mengelola koleksi buku, data anggota, transa
 
 Project ini dibangun dengan menerapkan konsep Object Oriented Programming (OOP) secara eksplisit, yaitu pemisahan model, service, exception, dan main ke dalam package tersendiri, serta memanfaatkan beberapa fitur inti Java seperti custom exception, assertion, dan manipulasi String serta Character.
 
-## ✨ Fitur
+## 1. Fitur
 
 1. Manajemen Data Buku, meliputi menambahkan buku baru dan melihat seluruh koleksi.
 2. Pencarian dan Analisis Buku, yaitu mencari buku berdasarkan judul atau kategori tanpa memperhatikan huruf besar dan kecil, serta menghitung jumlah buku per kategori.
@@ -13,7 +13,7 @@ Project ini dibangun dengan menerapkan konsep Object Oriented Programming (OOP) 
 5. Laporan dan Analisis Aktivitas, meliputi total transaksi, anggota paling aktif, kategori paling populer, dan buku paling sering dipinjam.
 6. Menu interaktif berbasis Scanner di terminal.
 
-## 🗂️ Struktur Project
+## 2. Struktur Project
 
 ```
 perpustakaan/
@@ -49,7 +49,7 @@ Alur data secara singkat dapat dijelaskan sebagai berikut.
 3. `LibraryService` memvalidasi data yang diterima, lalu memproses objek `Book` atau `Member` yang bersangkutan. Jika ditemukan kondisi yang tidak valid, method ini akan melempar salah satu custom exception.
 4. Hasil proses, baik berupa data maupun pesan kesalahan, dikembalikan ke `MainApp` untuk ditampilkan kepada pengguna.
 
-## 📖 Penjelasan Detail Setiap File
+## 3. Penjelasan Detail Setiap File
 
 ### `library.model.Book`
 
@@ -159,7 +159,7 @@ Menu yang tersedia:
 
 Program juga memuat beberapa data awal, yaitu 5 buku dan 2 anggota, lewat `inisialisasiDataAwal()` agar bisa langsung dicoba tanpa input manual.
 
-## 🧩 Konsep yang Diterapkan dan Lokasinya di Kode
+## 4. Konsep yang Diterapkan dan Lokasinya di Kode
 
 | Konsep | Lokasi |
 |---|---|
@@ -176,7 +176,7 @@ Program juga memuat beberapa data awal, yaitu 5 buku dan 2 anggota, lewat `inisi
 | Manipulasi `Character` | `LibraryService.kapitalisasiSetiapKata()` |
 | `Scanner` (input konsol) | `MainApp` |
 
-## ⚙️ Instalasi dan Menjalankan
+## 5. Instalasi dan Menjalankan
 
 Prasyarat: JDK 8 atau versi yang lebih baru sudah terpasang. Bisa dicek dengan perintah `javac -version`.
 
@@ -210,6 +210,6 @@ Menjalankan di NetBeans atau IntelliJ IDEA:
 3. Tambahkan `-ea` pada VM Options. Di NetBeans, klik kanan project, pilih Properties, lalu Run, lalu isi VM Options. Di IntelliJ, buka Edit Configurations, lalu isi VM options.
 4. Jalankan seperti biasa menggunakan Run Project atau Shift F10.
 
-## 🛠️ Teknologi
+## 6. Teknologi
 
 Project ini menggunakan Java (JDK 8 ke atas) tanpa dependency atau library eksternal, dengan memanfaatkan `java.util.ArrayList`, `java.util.HashMap`, dan `java.util.Scanner` dari pustaka standar Java.
